@@ -459,7 +459,7 @@ body {
 }
 nav {
 	background: rgba(0,0,0,.3);
-	margin: 50px auto;
+	margin: 50px auto 30px auto;
   font-family: 'Poiret One';
   font-weight: bolder;
   letter-spacing: 1px;
@@ -496,10 +496,58 @@ ul.navigation li a:hover, footer a:hover  {
 main {
 	max-width: 90%;
 	margin: 0 auto;
+  padding: 0px 0px 30px 0;
+}
+section.main-content {
+  padding: 20px;
+  background: rgba(0,0,0,.5);
+  margin: 10px 10px 30px 10px;
 }
 footer {
 	padding: 20px;
 	text-align: right;
 	width: 100%;
 	font-weight: bold;
+}
+ul.nft-list {
+  list-style: none;
+}
+li.nft {
+  background: rgb(0,0,0,.5);
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  margin: 5px;
+  width: calc(33% - 10px);
+  border-radius: 15px;
+}
+li.nft a {
+  color: white;
+  text-decoration: none;
+}
+li.nft img {
+  max-width: 100%;
+  border-radius: 15px;
+  opacity: 0.8;
+  box-shadow: 2px 2px 5px #000000;
+}
+li.nft:hover img {
+  opacity: 1;
+}
+li.nft figcaption span {
+  font-size: 2em;
+  line-height: 1.8em;
+}
+li.nft span.buy {
+  color: white;
+  padding: 5px 20px;
+  border: solid 2px white;
+  line-height: 2em;
+  float: right;
+  text-decoration: none;
+  margin-top: 10px;
+  background: black;
+}
+li.nft:hover span.buy, li.nft span.buy:hover {
+  background-color: rgba(255,255,255,.2); 
 }

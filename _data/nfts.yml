@@ -1,50 +1,38 @@
 # nfts.yml
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 1"
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   buy_link: https://www.manifold.xyz
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 2"
+  description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   buy_link: https://www.manifold.xyz
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 3"
+  description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   buy_link: https://www.manifold.xyz
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 4"
+  description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   buy_link: https://www.manifold.xyz
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 5"
+  description: "Adipiscing tristique risus nec feugiat in fermentum posuere. Lobortis feugiat vivamus at augue eget arcu dictum."
   buy_link: https://www.manifold.xyz
 
 - name: Forgotten Dreams
-  image_name: forgottendreams.jpg
+  file_name: forgottendreams.jpg
   alt_text: Forgotten Dreams 
-  token_id: 1
-  contract_address: "0xd7a818d1fda26550ac0dd4f0620ec6c4ea60a239"
-  description: "Forgotten Dreams by Lucky Star 6"
+  description: "Id eu nisl nunc mi ipsum faucibus vitae aliquet. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum."
   buy_link: https://www.manifold.xyz
 

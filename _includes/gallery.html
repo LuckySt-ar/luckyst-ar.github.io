@@ -1,21 +1,22 @@
 <ul class="nft-list">
 {% for asset in site.data.nfts %}
-
-	{% capture srcset %}/assets/images/{{ asset.image_name }}{% endcapture %}
+	{% capture srcset %}/assets/images/{{ asset.file_name }}{% endcapture %}
 
   <li class="nft">
-	<figure>
-		<picture>
-			
-			<source srcset="{{ srcset | resize: '400x400' }}" alt="{{ asset.alt_text }}" media="(min-width: 768px)">
-			<source srcset="{{ srcset | resize: '200x200' }}" alt="{{ asset.alt_text }}">
-			<img src="{{ srcset }} alt="{{ asset.alt_text }}" title="{{ asset.name }}">
-		</picture>
-		<figcaption>
-			<span>{{ asset.name }}</span> 
-			<p>{{ asset.description }}</p>
-		</figcaption>
-	</figure>
+  	<a class="more-info" href="{{ asset.buy_link }}">
+			<figure>
+				<picture>
+					<source srcset="{{ srcset | resize: '400x400' }}" alt="{{ asset.alt_text }}" media="(min-width: 768px)">
+					<source srcset="{{ srcset | resize: '200x200' }}" alt="{{ asset.alt_text }}">
+					<img src="{{ srcset }}" alt="{{ asset.alt_text }}" title="{{ asset.name }}">
+				</picture>
+				<figcaption>
+					<span>{{ asset.name }}</span> 
+					<p>{{ asset.description }}</p>
+				</figcaption>
+			</figure>
+			<span class="buy">More Info</span>
+		</a>
   </li>
 {% endfor %}
 </ul>
