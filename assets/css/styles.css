@@ -429,7 +429,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #000000;
-	color: #CCCCCC;
+	color: lightgray;
 	background: rgb(183,45,253, 0.5);
   background: url('../images/forgottendreams.jpg') top;
   background-attachment: fixed;
@@ -494,14 +494,16 @@ ul.navigation li a:hover, footer a:hover  {
 	border-bottom: solid 2px rgb(204, 153, 51);
 }
 main {
-	max-width: 90%;
+	width: 90%;
+  max-width: 1800px;
 	margin: 0 auto;
   padding: 0px 0px 30px 0;
 }
 section.main-content {
-  padding: 20px;
+  padding: 20px 30px;
   background: rgba(0,0,0,.8);
-  margin: 10px 10px 30px 10px;
+  margin: 10px 0px 30px 0px;
+  border-radius: 15px;
 }
 main h1, main h2, main h3 {
   font-family: 'Poiret One';
@@ -521,6 +523,7 @@ main h3 {
 main p {
   padding: 5px 0 10px 0;
   margin: 5px auto;
+  line-height: 1.2em;
 }
 footer {
 	padding: 20px;
@@ -537,8 +540,13 @@ li.nft {
   vertical-align: top;
   padding: 20px;
   margin: 5px;
-  width: calc(33% - 10px);
+  width: calc(33% - 14px);
   border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  li.nft {
+    width: calc(50% - 14px);
+  } 
 }
 li.nft a {
   color: white;
@@ -554,8 +562,19 @@ li.nft:hover img {
   opacity: 1;
 }
 li.nft figcaption span {
-  font-size: 2em;
-  line-height: 1.8em;
+  font-size: 1.5em;
+  font-family: 'Poiret One';
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: black;
+  margin: 0 auto 0 20px;
+}
+li.nft figcaption p {
+  padding: 10px 20px;
+  color: gray;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 li.nft span.buy {
   color: white;
@@ -569,4 +588,12 @@ li.nft span.buy {
 }
 li.nft:hover span.buy, li.nft span.buy:hover {
   background-color: rgba(255,255,255,.2); 
+}
+.twitter {
+  overflow: scroll;
+  width: 50%;
+  height: 500px;
+  padding: 20px;
+  background: rgba(0,0,0,.8);
+  border-radius: 15px;
 }
