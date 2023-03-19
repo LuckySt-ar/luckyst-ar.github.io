@@ -500,8 +500,27 @@ main {
 }
 section.main-content {
   padding: 20px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.8);
   margin: 10px 10px 30px 10px;
+}
+main h1, main h2, main h3 {
+  font-family: 'Poiret One';
+}
+main h1 {
+  font-size: 2.5em;
+  margin: 5px auto;
+}
+main h2 {
+  font-size: 2em;
+  margin: 5px auto;
+}
+main h3 {
+  font-size: 1.5em;
+  margin: 5px auto;
+}
+main p {
+  padding: 5px 0 10px 0;
+  margin: 5px auto;
 }
 footer {
 	padding: 20px;

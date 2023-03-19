@@ -1,4 +1,4 @@
-/* Footer */
+/* ------ Footer ------ */
 function adjustFooter() {
       let body = document.body;
       let html = document.documentElement;
@@ -17,7 +17,7 @@ function adjustFooter() {
 adjustFooter();
 window.addEventListener('resize', adjustFooter);
 
-/* Gallery */
+/* ------ Gallery ------ */
 function setSameHeight() {
   // Get all the list items in the nft list
   const nftItems = document.querySelectorAll('.nft-list figure');
@@ -38,7 +38,24 @@ function setSameHeight() {
 }
 
 // Call the function when the page loads
-setSameHeight();
+window.addEventListener('load', function() {
+  setSameHeight();
+});
 
 // Call the function when the window is resized
 window.addEventListener('resize', setSameHeight);
+
+/* ------ Background ------ */
+// Define an array of background image URLs
+const backgroundImages = [
+  '../assets/images/background1.png',
+  '../assets/images/background2.png',
+  '../assets/images/forgottendreams.jpg',
+];
+
+// Pick a random background image URL from the array
+const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+const randomImageUrl = backgroundImages[randomIndex];
+
+// Set the body background image to the random image URL
+document.body.style.backgroundImage = `url('${randomImageUrl}')`;
