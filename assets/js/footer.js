@@ -59,8 +59,9 @@ const backgroundImages = [
 const randomIndex = Math.floor(Math.random() * backgroundImages.length);
 const randomImageUrl = backgroundImages[randomIndex];
 
-// Set the body background image to the random image URL
-document.body.style.backgroundImage = `url('${randomImageUrl}')`;
+// Get the background div and set its background image to the random image URL
+const backgroundDiv = document.getElementById('background');
+backgroundDiv.style.backgroundImage = `url('${randomImageUrl}')`;
 
 
 function loadFunctions(){
