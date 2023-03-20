@@ -549,12 +549,12 @@ li.nft {
   width: calc(33% - 14px);
   border-radius: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   li.nft {
     width: calc(50% - 14px);
   } 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   li.nft {
     width: calc(100% - 14px);
   } 
