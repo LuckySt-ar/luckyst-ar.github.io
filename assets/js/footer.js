@@ -13,9 +13,6 @@ function adjustFooter() {
         footer.style.bottom = '0';
       }
     }
-    
-adjustFooter();
-window.addEventListener('resize', adjustFooter);
 
 /* ------ Gallery ------ */
 function setSameHeight() {
@@ -37,13 +34,18 @@ function setSameHeight() {
   nftItems.forEach(item => item.style.height = tallestItem + 'px');
 }
 
-// Call the function when the page loads
-window.addEventListener('load', function() {
-  setSameHeight();
-});
 
-// Call the function when the window is resized
-window.addEventListener('resize', setSameHeight);
+/* ------ Square Images ------ */
+function makeSquare() {
+  var containers = document.querySelectorAll('.square-container');
+  for (var i = 0; i < containers.length; i++) {
+    var container = containers[i];
+    var image = container.querySelector('.square');
+    var containerWidth = container.offsetWidth;
+    image.style.height = containerWidth + 'px';
+  }
+}
+
 
 /* ------ Background ------ */
 // Define an array of background image URLs
@@ -59,3 +61,13 @@ const randomImageUrl = backgroundImages[randomIndex];
 
 // Set the body background image to the random image URL
 document.body.style.backgroundImage = `url('${randomImageUrl}')`;
+
+
+function loadFunctions(){
+  setSameHeight();
+  makeSquare();
+  adjustFooter();
+}
+
+window.addEventListener('load', loadFunctions);
+window.addEventListener('resize', loadFunctions);

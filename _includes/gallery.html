@@ -5,12 +5,12 @@
   <li class="nft">
   	<a class="more-info" href="{{ asset.buy_link }}">
 			<figure>
-				<picture>
+				<picture class="square-container">
 					<source srcset="{{ srcset | resize: '600x600' }}" alt="{{ asset.alt_text }}" media="(min-width: 1200px)">
 					<source srcset="{{ srcset | resize: '500x500' }}" alt="{{ asset.alt_text }}" media="(min-width: 1000px)">
 					<source srcset="{{ srcset | resize: '400x400' }}" alt="{{ asset.alt_text }}" media="(min-width: 768px)">
 					<source srcset="{{ srcset | resize: '300x300' }}" alt="{{ asset.alt_text }}">
-					<img src="{{ srcset }}" alt="{{ asset.alt_text }}" title="{{ asset.name }}">
+					<img src="{{ srcset }}" alt="{{ asset.alt_text }}" title="{{ asset.name }}" class="square">
 				</picture>
 				<figcaption>
 					<span>{{ asset.name }}</span> 

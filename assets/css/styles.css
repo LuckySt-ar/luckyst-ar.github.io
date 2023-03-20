@@ -557,6 +557,7 @@ li.nft img {
   border-radius: 15px;
   opacity: 0.8;
   box-shadow: 2px 2px 5px #000000;
+  object-fit: cover;
 }
 li.nft:hover img {
   opacity: 1;
@@ -564,12 +565,10 @@ li.nft:hover img {
 li.nft figcaption span {
   font-size: 1.5em;
   font-family: 'Poiret One';
-  padding: 10px 20px;
+  padding: 20px 20px 0px 20px;
   display: inline-block;
   font-weight: bold;
   letter-spacing: 1px;
-  background: black;
-  margin: 0 auto 0 20px;
 }
 li.nft figcaption p {
   padding: 10px 20px;
