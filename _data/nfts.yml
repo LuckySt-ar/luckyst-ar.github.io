@@ -1,13 +1,13 @@
 # nfts.yml
 
 - name: "FORGOTTEN DREAMS #6: RESPLENDENCE"
-  file_name: forgotten-dreams-resplendence.jpg
+  file_name: resplendence.jpg
   alt_text: "A man and woman embracing, the man is kissing the woman on the cheek."
   description: "Wonderment and awe, take hold.<br>Spiraling in an ethereal dance,<br>The stars, bear witness."
   buy_link: https://gallery.manifold.xyz/0xa9cac3d87d43640ccf49429af2c41b580fdd14ac/2
 
 - name: "FORGOTTEN DREAMS #11: ABUNDANCE"
-  file_name: forgotten-dreams-abundance.jpg
+  file_name: abundance.jpg
   alt_text: "A group of people walking before a fantastical show of lights."
   description: "Of imagination,<br>Of spirit,<br>The curious are gifted, forever."
   buy_link: https://app.manifold.xyz/c/fdls11
@@ -19,19 +19,19 @@
   buy_link: https://gallery.manifold.xyz/0xed10b60a6c010ba0ad44d712669e4f2118c0a126/2
 
 - name: "FORGOTTEN DREAMS #5: COURAGE"
-  file_name: forgotten-dreams-courage.jpg
+  file_name: courage.jpg
   alt_text: "A colorful being made of light, flowers, and other galatic elements."
   description: "It is lonely and I am alone.<br>But I am not alone really, right?"
   buy_link: https://app.manifold.xyz/c/fdls05
 
 - name: "FORGOTTEN DREAMS #9: CHAMPION"
-  file_name: forgotten-dreams-champion.jpg
+  file_name: champion.jpg
   alt_text: "Two people in a soft embrace, one person is covered in cool blue tones, the other person is covered in warm red tones."
   description: "Deliverer.<br>Valiant, Resolute.<br>Your vision, undeterred, unwavering.<br>Finding your way, you will save us all."
   buy_link: https://gallery.manifold.xyz/0xa9cac3d87d43640ccf49429af2c41b580fdd14ac/3
 
 - name: "FORGOTTEN DREAMS #2: STRENGTH"
-  file_name: forgotten-dreams-strength.jpg
+  file_name: strength.jpg
   alt_text: "Two beings stand before a galaxy, wearing helmets with animal ears, their eyes are filled with light."
   description: "Do you remember all the places where we wanted to go?  Where we went?<br>I never want to leave your side."
   buy_link: https://app.manifold.xyz/c/fd1ls2

@@ -9,7 +9,7 @@
     <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
   {% endif %}
 </head>
-<body class="welcome">
+<body class="welcome {% if page.url == '/' %}home{% endif %}">
   <div class="wrapper">
     <header>{% include header.html %}</header>
     <main>

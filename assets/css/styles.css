@@ -442,9 +442,9 @@ body {
   font-family: 'Poiret One';
 	text-align: center;
 	color: rgb(255,255,255);
-	font-size: 13vw;
+	font-size: 1000%;
 	width: 100%;
-	padding: 1vw;
+	padding: 5vw 5vw 2vw 5vw;
 	z-index: 1;
 	position: relative;
 }
@@ -473,13 +473,19 @@ ul.navigation {
 ul.navigation li {
 	line-height: 1.5em;
 	display: inline-block;
-	font-size: 1.5em;
+	font-size: 2vw;
+  font-weight: bold;
 }
 ul.navigation li::after {
 	content: ' | ';
 	letter-spacing: 5px;
 	color: black;
 	font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  ul.navigation li {
+    font-size: 2vh;
+  } 
 }
 ul.navigation li:last-of-type::after {
 	content: none;
@@ -509,15 +515,15 @@ main h1, main h2, main h3 {
   font-family: 'Poiret One';
 }
 main h1 {
-  font-size: 2.5em;
+  font-size: 7vh;
   margin: 5px auto;
 }
 main h2 {
-  font-size: 2em;
+  font-size: 5vh;
   margin: 5px auto;
 }
 main h3 {
-  font-size: 1.5em;
+  font-size: 3vh;
   margin: 5px auto;
 }
 main p {
@@ -548,11 +554,17 @@ li.nft {
     width: calc(50% - 14px);
   } 
 }
+@media screen and (max-width: 450px) {
+  li.nft {
+    width: calc(100% - 14px);
+  } 
+}
 li.nft a {
   color: white;
   text-decoration: none;
 }
 li.nft img {
+  width: 100%;
   max-width: 100%;
   border-radius: 15px;
   opacity: 0.8;
