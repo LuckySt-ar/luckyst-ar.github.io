@@ -434,9 +434,15 @@ body {
   background: url('../images/forgottendreams.jpg') top;
   background-attachment: fixed;
   background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 .wrapper {
   background-color: rgba(0, 0, 0, 0.5); /* Set the background color with an alpha value */
+  overflow: scroll;
+  height: 100vh;
+  width: 100vw;
 }
 .logo {
   font-family: 'Poiret One';
@@ -482,9 +488,14 @@ ul.navigation li::after {
 	color: black;
 	font-weight: bolder;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   ul.navigation li {
     font-size: 2vh;
+  } 
+}
+@media screen and (max-width: 600px) {
+  ul.navigation li {
+    font-size: 1.8vh;
   } 
 }
 ul.navigation li:last-of-type::after {
