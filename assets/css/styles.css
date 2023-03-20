@@ -431,8 +431,11 @@ body {
 	background: #000000;
 	color: lightgray;
 	background: rgb(183,45,253, 0.5);
+}
+.background {
   background: url('../images/forgottendreams.jpg') top;
-  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
   height: 100vh;
@@ -440,9 +443,11 @@ body {
 }
 .wrapper {
   background-color: rgba(0, 0, 0, 0.5); /* Set the background color with an alpha value */
-  overflow: scroll;
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  left: 50%; 
+  margin-top: 0;
+  transform: translateX(-50%);
+  width: 100%;
 }
 .logo {
   font-family: 'Poiret One';
