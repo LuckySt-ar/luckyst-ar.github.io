@@ -3,5 +3,7 @@ layout: default
 title: Contact
 ---
 
-<h1>Welcome to Lucky Star</h1>
-<p>This is an example of a basic one column layout.</p>
+<h1>Contact Lucky Star</h1>
+<p>Lorem ipsum dolor.</p>
+
+{% include contact-form.html %}

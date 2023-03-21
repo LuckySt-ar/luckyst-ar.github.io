@@ -1,5 +1,12 @@
-site_title: Lucky Star
-header_title: Lucky Star
+# General Site Settings
+site_title: 'Lucky Star'
+header_title: 'Lucky Star'
+
+# Copyright Settings
 copyright_year: 2021
-copyright_name: Lucky Star
-copyright_link: /contact
+copyright_name: 'Lucky Star'
+copyright_link: '/contact'
+
+# Contact Form Settings
+success_message: 'Thank you for your time and support!<br>I typically respond to messages in the order they are received.'
+error_message: 'Oops! There was a problem submitting your form.'

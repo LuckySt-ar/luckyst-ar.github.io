@@ -636,3 +636,40 @@ li.nft:hover span.buy, li.nft span.buy:hover {
   background: rgba(0,0,0,.8);
   border-radius: 15px;
 }
+#contact {
+  margin: 30px;
+}
+.contact-set {
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.contact-set input, .contact-set textarea {
+  width: calc(100% - 120px);
+  border: solid 2px darkgray;
+  background: whitesmoke;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.contact-set textarea {
+  height: 100px;
+}
+.contact-set label {
+  vertical-align: top;
+  width: 100px;
+  display: inline-block;
+  padding: 8px 5px 5px 5px;
+}
+#form-button {
+  margin-left: 105px;
+  border: solid 2px white;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+}
+#form-status.success {
+    background: lightyellow;
+    border: solid 2px greenyellow;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: black;
+}
