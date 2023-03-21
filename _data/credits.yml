@@ -1,0 +1,14 @@
+# credits.yml
+# List your site credits
+
+- name: Digital Altar
+  description: Site Code & Design by Digital Altar
+  url: https://digitalaltar.com
+
+- name: Github
+  description: Site hosted by Github Pages
+  url: https://www.curate.page/t/fdls
+
+- name: LooksRare
+  description: API for NFT data provided by LooksRare
+  url: https://www.curate.page/t/fdls

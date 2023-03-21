@@ -543,15 +543,14 @@ main h3 {
   margin: 5px auto;
 }
 main a {
-  color: palegoldenrod;
+  color: gold;
   text-decoration: none;
 }
 main a:hover {
-  color: lightgoldenrodyellow;
-  text-decoration: underline;
+  color: deepskyblue;
 }
 main p {
-  padding: 5px 0 10px 0;
+  padding: 5px 10px 10px 10px;
   margin: 5px auto;
   line-height: 1.2em;
 }
@@ -617,7 +616,7 @@ li.nft figcaption span {
 }
 li.nft figcaption p {
   padding: 10px 20px 50px 20px;
-  color: gray;
+  color: lightgray;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 li.nft span.buy {
@@ -690,4 +689,7 @@ ul.linklist a {
 ul.linklist span {
   display: block;
   margin-bottom: 20px;
+}
+.links h2 {
+  margin-top: 30px;
 }

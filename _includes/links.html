@@ -1,10 +1,23 @@
-{% assign links = site.data.links %}
+<div class="links">
+  <h2>Important Links</h2>
+  {% assign links = site.data.links %}
+  <ul class="linklist">
+    {% for link in links %}
+      <li>
+      	<a href="{{ link.url }}">{{ link.name }}</a>
+      	<span>{{ link.description }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 
-<ul class="linklist">
-  {% for link in links %}
-    <li>
-    	<a href="{{ link.url }}">{{ link.name }}</a>
-    	<span>{{ link.description }}</span>
-    </li>
-  {% endfor %}
-</ul>
+  <h2>Site Credits</h2>
+  {% assign credits = site.data.credits %}
+  <ul class="linklist">
+    {% for credit in credits %}
+      <li>
+        <a href="{{ link.url }}">{{ credit.name }}</a>
+        <span>{{ credit.description }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
