@@ -1,0 +1,26 @@
+# featured.yml
+#
+# List your Featured NFTs here like this:
+# entry: 1
+# name: 'put anything to help you remember which one this is, it doesnt show on the frontend'
+# contract: '0x1234567890'
+# token_id: 1
+# link: 'put the link to your desired buy url here, if left blank it will default to a LooksRare url'
+
+- entry: 1 
+  name: 'Repose'
+  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
+  token_id: 1
+  link: ''
+
+- entry: 2
+  name: 'Repose'
+  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
+  token_id: 1
+  link: ''
+
+- entry: 3
+  name: 'Repose'
+  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
+  token_id: 1
+  link: ''

@@ -518,7 +518,7 @@ ul.navigation li a:hover, footer a:hover  {
 main {
 	width: 90%;
   max-width: 1800px;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
   padding: 0px 0px 30px 0;
 }
 section.main-content {
@@ -573,6 +573,14 @@ li.nft {
 }
 @media screen and (max-width: 600px) {
   li.nft {
+    width: calc(100% - 14px);
+  } 
+}
+.featured li.nft {
+  width: calc(33% - 14px);
+}
+@media screen and (max-width: 800px) {
+  .featured li.nft {
     width: calc(100% - 14px);
   } 
 }

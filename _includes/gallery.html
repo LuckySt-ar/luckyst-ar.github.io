@@ -1,4 +1,8 @@
-{% assign nftlist = site.data.nfts | sort: 'entry' | sort_natural %}
+{% if gallery %}
+	{% assign nftlist = site.data.nfts | sort: 'entry' | sort_natural %}
+{% else %}
+	{% assign nftlist = site.data.featured | sort: 'entry' | sort_natural %}
+{% endif %}
 
 <script>
 const collections = [

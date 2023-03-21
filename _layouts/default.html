@@ -3,17 +3,18 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-  {% if page.url == '/' %}
+
+  {% if page.url == '/' %}{% assign index = true %}{% endif %}
+  {% if page.url contains "/gallery" %}{% assign gallery = true %}{% endif %}
+
+  {% if index %}
     <title>{{ site.data.settings.site_title }}</title>
   {% else %}
     <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
   {% endif %}
 
-  {% if page.url contains "/gallery" %}
-    {% assign gallery = true %}
-  {% endif %}
 </head>
-<body class="welcome {% if page.url == '/' %}home{% endif %}">
+<body class="welcome {% if index %}home{% endif %}">
   <div id="background" class="background"></div>
   <div class="wrapper">
     <header>{% include header.html %}</header>
@@ -23,20 +24,16 @@
         {{ content }}
       </section>
 
-      {% if gallery %}
-        <section class="gallery">
-          {% include gallery.html %}
-        </section>
-      {% endif %}
+      <section class="gallery {% if gallery %}main-gallery{% else %}featured{% endif %}">
+        {% include gallery.html %}
+      </section>
 
     </main>
     <footer>{% include footer.html %}</footer>
   </div>
 
-{% if gallery %}
   <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
   <script>looksrareGallery(collections);</script>
-{% endif %}
-<script src="{{ '/assets/js/footer.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/footer.js' | relative_url }}"></script>
 </body>
 </html>
