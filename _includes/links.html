@@ -1,0 +1,10 @@
+{% assign links = site.data.links %}
+
+<ul class="linklist">
+  {% for link in links %}
+    <li>
+    	<a href="{{ link.url }}">{{ link.name }}</a>
+    	<span>{{ link.description }}</span>
+    </li>
+  {% endfor %}
+</ul>

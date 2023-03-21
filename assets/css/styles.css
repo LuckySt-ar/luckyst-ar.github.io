@@ -542,6 +542,14 @@ main h3 {
   font-size: 3vh;
   margin: 5px auto;
 }
+main a {
+  color: palegoldenrod;
+  text-decoration: none;
+}
+main a:hover {
+  color: lightgoldenrodyellow;
+  text-decoration: underline;
+}
 main p {
   padding: 5px 0 10px 0;
   margin: 5px auto;
@@ -672,4 +680,14 @@ li.nft:hover span.buy, li.nft span.buy:hover {
     padding: 10px 20px;
     margin-top: 30px;
     color: black;
+}
+ul.linklist {
+  margin: 30px;
+}
+ul.linklist a {
+  font-size: 1.5em;
+}
+ul.linklist span {
+  display: block;
+  margin-bottom: 20px;
 }

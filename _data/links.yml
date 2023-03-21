@@ -1,0 +1,10 @@
+# links.yml
+# List your links
+
+- name: Lucky Star on Twitter
+  description: Follow me on Twitter
+  url: http://twitter.com/LuckyS_tar
+
+- name: Forgotten Dreams on Manifold
+  description: Follow my work on Manifold
+  url: https://www.curate.page/t/fdls
