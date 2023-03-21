@@ -9,12 +9,15 @@ function looksrareGallery(collections) {
     fetchWithRetry(url, options, maxRetryAttempts)
       .then(response => response.json())
       .then(response => {
+        const imageURI = response.data.imageURI;
+        const modifiedImageURI = imageURI.includes('https://static.looksnice.org/') ? imageURI.replace('https://static.looksnice.org/', 'https://looksrare.mo.cloudinary.net/') : imageURI;
+        
         const li = `
           <li class="nft">
             <a class="more-info" href="${buyLink}">
               <figure>
                 <picture class="square-container">
-                  <img src="${response.data.imageURI}" alt="${response.data.name}" title="${response.data.name}" class="square">
+                  <img src="${modifiedImageURI}?resource_type=image&f=auto&c=limit&w=800&q=auto" alt="${response.data.name}" title="${response.data.name}" class="square">
                 </picture>
                 <figcaption>
                   <span>${response.data.name}</span>
