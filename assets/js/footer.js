@@ -17,7 +17,7 @@ function adjustFooter() {
 /* ------ Gallery ------ */
 function setSameHeight() {
   // Get all the list items in the nft list
-  const nftItems = document.querySelectorAll('.nft-list figure');
+  const nftItems = document.querySelectorAll('.nft-list .nft');
 
   // Reset the height of all the list items
   nftItems.forEach(item => item.style.height = 'auto');
@@ -33,6 +33,22 @@ function setSameHeight() {
   // Set the height of all the list items to the tallest item
   nftItems.forEach(item => item.style.height = tallestItem + 'px');
 }
+
+// Watch for new elements being added to the DOM
+const observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    // Check if new nodes were added
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      // Call setSameHeight() again to recalculate the heights
+      setSameHeight();
+      makeSquare();
+    }
+  });
+});
+
+// Start watching the nft list for new nodes being added
+const nftList = document.querySelector('.nft-list');
+observer.observe(nftList, { childList: true });
 
 
 /* ------ Square Images ------ */

@@ -8,6 +8,10 @@
   {% else %}
     <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
   {% endif %}
+
+  {% if page.url contains "/gallery" %}
+    {% assign gallery = true %}
+  {% endif %}
 </head>
 <body class="welcome {% if page.url == '/' %}home{% endif %}">
   <div id="background" class="background"></div>
@@ -19,7 +23,7 @@
         {{ content }}
       </section>
 
-      {% if page.url contains "/gallery" %}
+      {% if gallery %}
         <section class="gallery">
           {% include gallery.html %}
         </section>
@@ -29,6 +33,10 @@
     <footer>{% include footer.html %}</footer>
   </div>
 
+{% if gallery %}
+  <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
+  <script>looksrareGallery(collections);</script>
+{% endif %}
 <script src="{{ '/assets/js/footer.js' | relative_url }}"></script>
 </body>
 </html>

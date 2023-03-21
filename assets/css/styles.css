@@ -564,6 +564,7 @@ li.nft {
   margin: 5px;
   width: calc(33% - 14px);
   border-radius: 15px;
+  position: relative;
 }
 @media screen and (max-width: 900px) {
   li.nft {
@@ -599,7 +600,7 @@ li.nft figcaption span {
   letter-spacing: 1px;
 }
 li.nft figcaption p {
-  padding: 10px 20px;
+  padding: 10px 20px 50px 20px;
   color: gray;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
@@ -612,6 +613,9 @@ li.nft span.buy {
   text-decoration: none;
   margin-top: 10px;
   background: black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 li.nft:hover span.buy, li.nft span.buy:hover {
   background-color: rgba(255,255,255,.2); 

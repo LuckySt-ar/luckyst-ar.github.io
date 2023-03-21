@@ -1,5 +1,21 @@
+{% assign nftlist = site.data.nfts | sort: 'entry' %}
+
+<script>
+const collections = [
+{% for nft in nftlist %}
+	{% if nft.link == '' or nft.link == null %}
+	  {% capture nftlink %}https://looksrare.org/collections/{{ nft.contract }}/{{ nft.token_id }}{% endcapture %}
+	{% else %}
+	  {% assign nftlink = nft.link %}
+	{% endif %}
+  { collectionAddress: '{{ nft.contract }}', tokenId: {{ nft.token_id }}, buyLink: '{{ nftlink }}' }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+];
+</script>
+
+{% comment %}
 <ul class="nft-list">
-{% for asset in site.data.nfts %}
+{% for asset in site.data.gallery %}
 	{% capture srcset %}/assets/images/{{ asset.file_name }}{% endcapture %}
 
   <li class="nft">
@@ -18,3 +34,6 @@
   </li>
 {% endfor %}
 </ul>
+{% endcomment %}
+
+<ul id="response" class="nft-list"></ul>
