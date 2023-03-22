@@ -10,4 +10,4 @@ title: Gallery
 
 <p>My focus is on Accessibility and Inclusion. I want my work to reflect the times we are in, and hope for a brighter tomorrow. I want to make it so people can get quality art no matter what. I want my professional art friends I miss to see this and know they can do this and thrive in web3.  Thank you for taking your precious time to witness these collaborative works.</p>
 
-Lucky Star 🍀⭐✨🌈</p>
+Lucky Star 🍀⭐✨🌈
