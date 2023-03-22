@@ -8,19 +8,19 @@
 # link: 'put the link to your desired buy url here, if left blank it will default to a LooksRare url'
 
 - entry: 1 
-  name: 'Repose'
-  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
-  token_id: 1
+  name: 'Other Dimension 5'
+  contract: '0xed10b60A6C010BA0ad44d712669E4f2118c0a126'
+  token_id: 5
   link: ''
 
 - entry: 2
-  name: 'Repose'
-  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
-  token_id: 1
+  name: 'Trials'
+  contract: '0xA9CAC3d87D43640Ccf49429Af2C41B580FDd14aC'
+  token_id: 17
   link: ''
 
 - entry: 3
-  name: 'Repose'
-  contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
-  token_id: 1
+  name: 'Resplendence'
+  contract: '0xA9CAC3d87D43640Ccf49429Af2C41B580FDd14aC'
+  token_id: 2
   link: ''
