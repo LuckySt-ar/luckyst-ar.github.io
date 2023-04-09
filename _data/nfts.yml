@@ -163,8 +163,8 @@
   token_id: 5
   link: ''
   
-- entry: 26
-  name: 'Introspection'
+- entry: 27
+  name: 'Seclusion'
   contract: '0x8bC416Db54E238596A1533c80933f5473dfB292d'
-  token_id: 10
+  token_id: 14
   link: ''
