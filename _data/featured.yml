@@ -14,12 +14,6 @@
   link: ''
 
 - entry: 2
-  name: 'Endurance'
-  contract: '0xa9cac3d87d43640ccf49429af2c41b580fdd14ac'
-  token_id: 15
-  link: ''
-
-- entry: 3
   name: 'Other Dimension 8'
   contract: '0xed10b60a6c010ba0ad44d712669e4f2118c0a126'
   token_id: 5
