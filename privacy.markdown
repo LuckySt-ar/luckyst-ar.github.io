@@ -12,7 +12,7 @@ Privacy Policy
 </h1>
 
 <div class="box">
-{% comment %} Begin editing about information {% endcomment %}
+{% comment %} Begin editing privacy policy {% endcomment %}
 
 <p>This privacy policy sets out how I, the owner of this website, use and protect any information that you provide when you use this website. I am committed to ensuring that your privacy is protected.</p>
 
@@ -45,5 +45,5 @@ Privacy Policy
     <span class="yat">🍀⭐✨🌈</span>
   </p>
 
-{% comment %} End editing about information {% endcomment %}
+{% comment %} End editing privacy policy {% endcomment %}
 </div>
