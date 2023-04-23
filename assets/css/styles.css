@@ -442,6 +442,11 @@ body {
   font-size: 1.5rem;
   font-family: sans-serif;
 }
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
 
 /* The Intro Page */
 .intro {
@@ -506,8 +511,6 @@ video#intro-video {
 }
 video#main-video {
   opacity: .3;
-}
-@media screen and (max-width: 700px) {
 }
 
 /* The Navigation */
@@ -661,8 +664,14 @@ main {
   font-size: 1.3rem;
   line-height: 1.6rem;
 }
+@media screen and (max-width: 700px) {
+  main {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+}
 .main-content {
-  padding: 0 5% 30px 5%;
+  padding: 0 5%;
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -727,14 +736,12 @@ li.nft a {
 li.nft img {
   width: 100%;
   height: 100%;
-  border: solid 2px black;
   object-fit: cover;
   margin: 0 auto;
   display: block;
   position: relative;
 }
 li.nft:hover img {
-  border: solid 2px whitesmoke;
   box-shadow: none;
 }
 li.nft picture {
@@ -742,19 +749,22 @@ li.nft picture {
 li.nft figcaption {
   vertical-align: top;
   padding: 20px;  
-}
-li.nft:hover figcaption {
   background: whitesmoke;
   color: black;
+  margin-bottom: 30px;
+  color: #666;
 }
 li.nft figcaption h3 {
+  font-size: 1.2rem;
   line-height: 2rem;
-  font-weight: bold;  
+  font-weight: bold;
 }
 li.nft figcaption p {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-style: italic;
+  font-size: .9rem;
+  line-height: 1rem;
+}
+li.nft:hover figcaption {
+  color: black;
 }
 
 /* About */
