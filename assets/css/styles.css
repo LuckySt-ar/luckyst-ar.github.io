@@ -507,6 +507,8 @@ video#intro-video {
 video#main-video {
   opacity: .3;
 }
+@media screen and (max-width: 700px) {
+}
 
 /* The Navigation */
 nav {
@@ -527,7 +529,7 @@ nav.header {
   text-align: center;
 }
 .nav-links li {
-  padding: 5px 2%;
+  padding: 5px 3%;
 }
 .nav-links li a {
   color: whitesmoke;
@@ -546,11 +548,15 @@ nav.footer a {
 nav.footer a:hover {
   color: black;
 }
-
+@media screen and (max-width: 700px) {
+  nav {
+    font-size: 4vw;
+  }
+}
 /* The Footer and Footer Navigation */
 footer {
   background: black;
-  padding: 30px 30px 70px 30px;
+  padding: 30px;
   margin: 0 auto;
 }
 footer h2 {
@@ -641,6 +647,12 @@ footer h3 {
 .logo:hover {
   position: relative;
   top: -10px;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    font-size: 20vw;
+    line-height: 35vw;
+  }
 }
 
 /* The Main Content */
