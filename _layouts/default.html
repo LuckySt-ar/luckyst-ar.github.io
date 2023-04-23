@@ -1,39 +1,65 @@
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  {% if page.url == '/' %}{% assign index = true %}{% endif %}
-  {% if page.url contains "/gallery" %}{% assign gallery = true %}{% endif %}
+    {% if page.url == '/' %}{% assign index = true %}{% endif %}
+    {% if page.url contains "/gallery" %}{% assign gallery = true %}{% endif %}
 
-  {% if index %}
-    <title>{{ site.data.settings.site_title }}</title>
-  {% else %}
-    <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
-  {% endif %}
+    {% if index %}
+      <title>{{ site.data.settings.site_title }}</title>
+    {% else %}
+      <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
+    {% endif %}
 
-</head>
-<body class="welcome {% if index %}home{% endif %}">
-  <div id="background" class="background"></div>
-  <div class="wrapper">
-    <header>{% include header.html %}</header>
-    <main>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="navigation">
 
-      <section class="main-content">
-        {{ content }}
-      </section>
+      <nav class="header">
+        {% include nav.html %}
+      </nav>
 
-      <section class="gallery {% if gallery %}main-gallery{% else %}featured{% endif %}">
-        {% include gallery.html %}
-      </section>
+    </div>
+    <div class="content">
 
-    </main>
-    <footer>{% include footer.html %}</footer>
-  </div>
+      <header>
+        {% include header.html %}
+      </header>
+ 
+      <main>
+        <section class="main-content">
+          {{ content }}
+        </section>
 
-  <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
-  <script>looksrareGallery(collections);</script>
-  <script src="{{ '/assets/js/footer.js' | relative_url }}"></script>
-</body>
+        {% if gallery %}
+          <section class="gallery">
+            {% include gallery.html %}
+          </section>
+        {% endif %}
+      </main>
+
+      <nav class="footer">
+        {% include nav.html %}
+      </nav>
+
+      <footer>
+        {% include footer.html %}
+      </footer>
+
+    </div>
+
+    {% if gallery %}
+      <script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
+      <script>looksrareGallery(collections);</script>
+    {% endif %}
+
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+  </body>
 </html>

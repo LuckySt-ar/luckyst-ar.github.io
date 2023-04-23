@@ -1,13 +1,11 @@
-<div class="logo">
-	<a href="/">{{ site.data.settings.header_title }}</a>
+<video id="main-video" autoplay loop muted>
+  <source src="{{ site.data.settings.main_video }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="logo-wrapper">
+  <a class="logo-link" href="/">
+    <span class="logo">{{ site.data.settings.header_title }}</span>
+    <span class="sr-only">Click Here to Return to Homepage</span>
+  </a>
 </div>
-<nav>
-	<ul class="navigation">
-	  {% assign links = site.data.navigation %}
-	  {% for link in links %}
-	    <li{% if page.url == link.url %} class="active"{% endif %}>
-	      <a href="{{ link.url }}">{{ link.title }}</a>
-	    </li>
-	  {% endfor %}
-	</ul>
-</nav>

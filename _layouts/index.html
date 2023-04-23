@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% if page.url == '/' %}{% assign index = true %}{% endif %}
+    {% if page.url contains "/gallery" %}{% assign gallery = true %}{% endif %}
+
+    {% if index %}
+      <title>{{ site.data.settings.site_title }}</title>
+    {% else %}
+      <title>{{ page.title }} - {{ site.data.settings.site_title }}</title>
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  </head>
+  <body>
+
+    <video id="intro-video" autoplay loop muted>
+      <source src="{{ site.data.settings.intro_video }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="intro">
+      <a class="intro_link" href="{{ site.data.settings.intro_link }}">
+        <h1 class="intro_title">{{ site.data.settings.intro_title }}</h1>
+        <p class="sr-only">Click Here to Continue to the Next Page</p>
+
+        {{ content }}
+      </a>
+    </div>
+
+  </body>
+</html>
