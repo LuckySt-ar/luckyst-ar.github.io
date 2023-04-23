@@ -1,1 +1,54 @@
-<a href="{{ site.data.settings.copyright_link }}">&copy; {{ site.data.settings.copyright_year }}-{{ "now" | date: "%Y" }} {{ site.data.settings.copyright_name }}</a>
+<h2>{{ site.data.settings.footer_title }}</h2>
+
+<div class="links">
+
+	<div class="footer-column social-media">
+	  <h3>Social Media</h3>
+	  {% assign links = site.data.social_links %}
+	  <ul class="linklist">
+	    {% for link in links %}
+	      <li>
+	      	<a href="{{ link.url }}">{{ link.name }}</a>
+	      	<span class="sr-only">{{ link.description }}</span>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+
+	<div class="footer-column web3">
+	  <h3>Web3</h3>
+	  {% assign links = site.data.web3_links %}
+	  <ul class="linklist">
+	    {% for link in links %}
+	      <li>
+	      	<a href="{{ link.url }}">{{ link.name }}</a>
+	      	<span class="sr-only">{{ link.description }}</span>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+
+	<div class="footer-column site-credits">
+	  <h3>Site Credits</h3>
+	  {% assign credits = site.data.credits %}
+	  <ul class="linklist">
+	    {% for credit in credits %}
+	      <li>
+	        <a href="{{ credit.url }}">{{ credit.name }}</a>
+	        <span class="sr-only">{{ credit.description }}</span>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+
+	<div class="footer-column copyright">
+		<a href="{{ site.data.settings.copyright_link }}">
+			Copyright &copy; {{ site.data.settings.copyright_year }}-{{ "now" | date: "%Y" }} {{ site.data.settings.copyright_name }}. 
+			<br>All rights reserved. 
+		</a>
+		<ul>
+			<li><a href="/privacy">Privacy Policy</a></li> 
+			<li><a href="/terms">Terms of Use</a></li>
+		</ul>
+	</div>
+</div>

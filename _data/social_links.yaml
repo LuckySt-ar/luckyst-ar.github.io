@@ -1,0 +1,18 @@
+# social_links.yml
+# List your Social Media links
+
+- name: Twitter
+  description: Follow Lucky Star on Twitter!
+  url: http://twitter.com/LuckyS_tar
+  
+- name: Instagram
+  description: Follow Lucky Star on Instagram!
+  url: https://instagram.com/luckyst_ar
+
+- name: Tiktok
+  description: Follow Lucky Star on TikTok!
+  url: https://www.tiktok.com/@luckys_tar
+
+- name: Artzone.ai
+  description: Follow Lucky Star on Artzone.Ai!
+  url: https://www.artzone.ai/u/luckys_tar

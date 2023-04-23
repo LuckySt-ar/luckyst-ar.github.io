@@ -1,7 +1,7 @@
 {% if gallery %}
-	{% assign nftlist = site.data.nfts | sort: 'entry' | sort_natural %}
+	{% assign nftlist = site.data.nfts | sort_natural: 'entry'  %}
 {% else %}
-	{% assign nftlist = site.data.featured | sort: 'entry' | sort_natural %}
+	{% assign nftlist = site.data.featured | sort_natural: 'entry' %}
 {% endif %}
 
 <script>

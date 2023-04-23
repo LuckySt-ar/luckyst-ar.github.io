@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: index
 title: Lucky Star
 ---
 
-<h1>You have entered a realm of Forgotten Dreams...</h1>
-<p> <i>Are you ready?</i></p>
+<div class="intro-box">
+<h2>You have entered a realm of Forgotten Dreams...</h2>
+<p><i>Are you ready?</i></p>
+</div>

@@ -20,11 +20,10 @@ function looksrareGallery(collections) {
                   <img src="${modifiedImageURI}?resource_type=image&f=auto&c=limit&w=800&q=auto" alt="${response.data.name}" title="${response.data.name}" class="square">
                 </picture>
                 <figcaption>
-                  <span>${response.data.name}</span>
+                  <h3>${response.data.name}</h3>
                   <p>${response.data.description}</p>
                 </figcaption>
               </figure>
-              <span class="buy">More Info</span>
             </a>
           </li>
         `;

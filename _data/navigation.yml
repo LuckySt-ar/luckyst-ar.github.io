@@ -1,6 +1,9 @@
 - title: ★
   url: /
   
+- title: Shop
+  url: /shop
+  
 - title: Gallery
   url: /gallery
 
@@ -9,6 +12,3 @@
 
 - title: Contact
   url: /contact
-
-- title: Links
-  url: /links

@@ -1,6 +1,19 @@
-# General Site Settings
+# Global Site Settings
 site_title: 'Lucky Star'
+
+# The Intro Page
+intro_title: 'Lucky Star'
+intro_link: '/gallery'
+intro_video: '/assets/video/fdls256s.mp4'
+
+# Main Content Settings
+main_video: '/assets/video/fdls256s.mp4'
+
+# The Header 
 header_title: 'Lucky Star'
+
+# The Footer
+footer_title: 'Lucky Star across the web...'
 
 # Copyright Settings
 copyright_year: 2021
@@ -8,5 +21,5 @@ copyright_name: 'Lucky Star'
 copyright_link: '/contact'
 
 # Contact Form Settings
-success_message: 'Thank you for your time and support!<br>I typically respond to messages in the order they are received.'
+success_message: '<strong>Your message has been sent to Lucky Star.</strong> <br><br> Thank you for your time and support!<br>I typically respond to messages in the order they are received.'
 error_message: 'Oops! There was a problem submitting your form.'
