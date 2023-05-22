@@ -1,6 +1,10 @@
 # social_links.yml
 # List your Social Media links
 
+- name: HUG
+  description: Follow Lucky Star on the HUG!
+  url: https://thehug.xyz/artists/lucky_star_
+  
 - name: Twitter
   description: Follow Lucky Star on Twitter!
   url: http://twitter.com/LuckyS_tar
@@ -13,6 +17,3 @@
   description: Follow Lucky Star on TikTok!
   url: https://www.tiktok.com/@luckys_tar
 
-- name: Artzone.ai
-  description: Follow Lucky Star on Artzone.Ai!
-  url: https://www.artzone.ai/u/luckys_tar
