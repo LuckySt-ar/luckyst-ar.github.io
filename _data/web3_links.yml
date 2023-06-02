@@ -1,6 +1,10 @@
 # web3_links.yml
 # List your Web3 specific links
 
+- name: Known Origin
+  description: Follow Lucky Star on KnownOrigin!
+  url: https://knownorigin.io/contract/0xb6a19ce490ea3b35b5dc999d9a1610c60528dfad
+
 - name: MakersPlace
   description: Follow Lucky Star on MakersPlace!
   url: https://makersplace.com/luckystarai
