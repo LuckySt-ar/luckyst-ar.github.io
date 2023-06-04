@@ -174,3 +174,9 @@
   contract: '0xa9cac3d87d43640ccf49429af2c41b580fdd14ac'
   token_id: 15
   link: ''
+  
+- entry: 29
+  name: 'Relentless'
+  contract: '0xA9CAC3d87D43640Ccf49429Af2C41B580FDd14aC'
+  token_id: 11
+  link: ''
